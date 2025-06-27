@@ -1,6 +1,21 @@
 # Faces-Recognition-based-on-Embedded-System
-实现基于Infineon CY8CPROTO-062-4343W PSoC 6的开发板和PTC06摄像头的嵌入式端拍照和发送图像数据为TCP到云服务器的功能（Implementation of Infineon CY8CPROTO-062-4343W PSoC 6 based development board and PTC06 camera on the embedded side to take pictures and send image data as TCP to a cloud server） 
-文档结构如下：The document structure is as follows:
+# 基于 Infineon CY8CPROTO-062-4343W 和 PTC06 的嵌入式图像采集与TCP上传实现  
+**Implementation of Infineon CY8CPROTO-062-4343W PSoC 6 based development board and PTC06 camera on the embedded side to take pictures and send image data as TCP to a cloud server**
+
+---
+
+## 前面的话  
+**Preface**
+
+本项目旨在使用 Infineon CY8CPROTO-062-4343W 开发板配合 PTC06 串口摄像头，实现图像的本地采集和通过 TCP 协议上传至远程云服务器的功能。该项目涵盖嵌入式系统开发、串口通信协议解析、图像数据处理与网络传输等关键技术环节，适用于嵌入式图像采集与远程传输方向的学习与实践。
+
+This project aims to use the Infineon CY8CPROTO-062-4343W development board in combination with the PTC06 serial camera to capture images locally and upload them to a remote cloud server via the TCP protocol. It involves key techniques including embedded system development, serial communication protocol parsing, image data processing, and network transmission. It is suitable for learning and practicing embedded image acquisition and remote transmission.
+
+---
+
+## 文档结构  
+**Document Structure**
+
 ```plaintext
 camera/
 ├── source/                          # 源代码目录 / Source code directory
@@ -17,7 +32,7 @@ camera/
 │       ├── cam_task.h              # 摄像头任务接口 / Camera task interface
 │       ├── ptc06.h                 # 摄像头驱动接口 / Camera driver interface
 │       └── uart_hal.h              # UART接口定义 / UART interface definitions
-├── image_server.py                  # Python图像接收服务器 / Python image receiving server
+├── image_server.py                 # Python图像接收服务器 / Python image receiving server
 ├── Makefile                        # 编译配置文件 / Build configuration file
 ├── README.md                       # 项目说明文档 / Project documentation
 ├── 专业名词及解释翻译              # 技术术语说明 / Technical terms and translation
